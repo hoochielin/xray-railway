@@ -1,0 +1,10 @@
+{
+  "inbounds": [{
+    "port": ${PORT},
+    "listen": "0.0.0.0",
+    "protocol": "vless",
+    "settings": {"clients": [{"id": "${UUID}", "flow": ""}], "decryption": "none"},
+    "streamSettings": {"network": "ws", "security": "none", "wsSettings": {"path": "${WS_PATH}"}}
+  }],
+  "outbounds": [{"protocol": "freedom"}]
+}
